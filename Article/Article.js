@@ -28,6 +28,8 @@ class Article {
 //  Select all classes named ".article" and assign that value to the articles variable.  
 let article = document.querySelectorAll(".article");
 //  With your selection in place, now chain .forEach() on to the articles variable to iterate over the articles NodeList and create a new instance of Article by passing in each article as a parameter to the Article class.
-
-
 let articles;
+let articles = document.querySelectorAll('.article')
+  forEach(article => {
+    newArticle(article)
+  });
